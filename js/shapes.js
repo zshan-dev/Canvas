@@ -1,4 +1,21 @@
+/**
+ * @fileoverview Shape classes for the Drawing App
+ * @author Your Name <your.student.number>
+ * @created April 2024
+ */
+
+/**
+ * Base Shape class that defines common properties and methods
+ * @class
+ */
 class Shape {
+    /**
+     * Creates a new Shape instance
+     * @param {number} x - The x-coordinate of the shape
+     * @param {number} y - The y-coordinate of the shape
+     * @param {number} size - The size of the shape in pixels
+     * @param {string} color - The color of the shape in hex format
+     */
     constructor(x, y, size, color) {
         this.x = x;
         this.y = y;
@@ -7,6 +24,10 @@ class Shape {
         this.type = this.constructor.name.toLowerCase();
     }
 
+    /**
+     * Draws the shape on the canvas context
+     * @param {CanvasRenderingContext2D} ctx - The canvas 2D rendering context
+     */
     draw(ctx) {
     }
 }

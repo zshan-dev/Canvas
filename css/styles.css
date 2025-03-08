@@ -1,14 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
     text-align: center;
+    background: linear-gradient(135deg, #ffd6e7, #c1f0ff);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 25px;
+    font-size: 3em;
+    text-shadow: 3px 3px 0px #ffffff;
 }
 
 .controls {
-    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    border: 3px solid #ffd6e7;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label {
+    font-weight: bold;
+    color: #666;
+    font-size: 1.1em;
+}
+
+select, input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #ff9ecd;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#draw {
+    background-color: #4cd964;
+    color: white;
+}
+
+#undo {
+    background-color: #ffcc00;
+    color: white;
+}
+
+#clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 canvas {
-    border: 1px solid black;
+    background-color: white;
+    border: 8px solid #ffd6e7;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     display: block;
     margin: 0 auto;
+}
+
+/* Rainbow border animation for canvas, code idea from https://forum.freecodecamp.org/t/keyframes-rainbow/504817*/
+@keyframes rainbow {
+    0% { border-color: #ff9ecd; }
+    25% { border-color: #91e6ff; }
+    50% { border-color: #9dff91; }
+    75% { border-color: #ffdb91; }
+    100% { border-color: #ff9ecd; }
+}
+
+canvas:hover {
+    animation: rainbow 5s infinite;
 }
