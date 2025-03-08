@@ -8,7 +8,6 @@ class Shape {
     }
 
     draw(ctx) {
-        // To be implemented by subclasses
     }
 }
 

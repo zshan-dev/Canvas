@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", function() {
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
 
@@ -65,25 +65,25 @@ window.addEventListener("load", () => {
         redrawCanvas();
     }
 
-    drawButton.addEventListener("click", () => {
+    drawButton.addEventListener("click", function() {
         addShape(canvas.width / 2, canvas.height / 2);
     });
 
-    canvas.addEventListener("click", (e) => {
+    canvas.addEventListener("click", function(event) {
         const rect = canvas.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
         console.log('Canvas clicked at:', x, y);
         addShape(x, y);
     });
 
-    undoButton.addEventListener("click", () => {
+    undoButton.addEventListener("click",function() {
         shapes.pop();
         saveToLocalStorage();
         redrawCanvas();
     });
 
-    clearButton.addEventListener("click", () => {
+    clearButton.addEventListener("click", function() {
         shapes = [];
         saveToLocalStorage();
         redrawCanvas();
