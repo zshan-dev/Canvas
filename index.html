@@ -1,10 +1,8 @@
 <!--
     Index for canvas app
-    Author: Seif Otefa (400557672) and Zeeshan Bombaywala (400557672)
-    Date: March 07 2025
-    
+    Author: Seif Otefa (400557672) and Zeeshan Bombaywala (400567923)
+    Date: Feburary 27 2025
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas Assignment</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/shapes.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     <h1>🎨 DoodleWorld 🖌️</h1>
     <div class="controls">
         <div class="control-group">
-            <label for="shape">Shape:</label>
+            <h3 id="shape-label">Shape:</h3>
             <select id="shape">
                 <option value="circle">Circle</option>
                 <option value="rectangle">Rectangle</option>
@@ -26,23 +26,21 @@
         </div>
 
         <div class="control-group">
-            <label for="size">Size:</label>
+            <h3 id="size-label">Size:</h3>
             <input type="number" id="size" value="50" min="10" max="200">
         </div>
 
         <div class="control-group">
-            <label for="color">Color:</label>
+            <h3 id="color-label">Color:</h3>
             <input type="color" id="color" value="#000000">
         </div>
+        <div>
 
-        <button id="draw">Draw</button>
-        <button id="undo">Undo</button>
-        <button id="clear">Clear</button>
+            <button id="undo">Undo</button>
+            <button id="clear">Clear</button>
+        </div>
     </div>
     
     <canvas id="canvas"></canvas>
-
-    <script src="js/shapes.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>

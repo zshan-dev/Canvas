@@ -1,11 +1,10 @@
 /**
- *  App logic for the Drawing App
- *  Authors: Seif Otefa (400557672) and Zeeshan Bombaywala
- *  Date: March 8th 2025
+ *  Logic for the Drawing on the Canvas
+ *  Authors: Seif Otefa (400557672) and Zeeshan Bombaywala (400567923)
+ *  Date: Feburary 27 2025
  */
 
 window.addEventListener("load", function () {
-  // Get DOM elements
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
 
@@ -15,7 +14,6 @@ window.addEventListener("load", function () {
   const shapeSelect = document.getElementById("shape");
   const sizeInput = document.getElementById("size");
   const colorInput = document.getElementById("color");
-  const drawButton = document.getElementById("draw");
   const undoButton = document.getElementById("undo");
   const clearButton = document.getElementById("clear");
 
@@ -109,10 +107,6 @@ window.addEventListener("load", function () {
   }
 
   // Event Listeners
-  drawButton.addEventListener("click", function () {
-    addShape(canvas.width / 2, canvas.height / 2);
-  });
-
   canvas.addEventListener("click", function (event) {
     const rect = canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;

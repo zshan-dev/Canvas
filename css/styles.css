@@ -1,7 +1,7 @@
 body {
     font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
     text-align: center;
-    background: linear-gradient(135deg, #ffd6e7, #c1f0ff);
+    background: linear-gradient(135deg, #ffd6e7, #00bfff);
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -37,10 +37,10 @@ h1 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-label {
+.control-group h3 {
     font-weight: bold;
     color: #666;
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 select, input[type="number"] {
@@ -62,15 +62,10 @@ button {
     border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 18px;
     font-family: inherit;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-#draw {
-    background-color: #4cd964;
-    color: white;
 }
 
 #undo {
