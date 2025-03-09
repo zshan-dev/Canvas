@@ -16,26 +16,25 @@
 <body>
     <h1>🎨 DoodleWorld 🖌️</h1>
     <div class="controls">
-        <div class="control-group">
-            <h3 id="shape-label">Shape:</h3>
-            <select id="shape">
-                <option value="circle">Circle</option>
-                <option value="rectangle">Rectangle</option>
-                <option value="triangle">Triangle</option>
-            </select>
+        <div id ="options">
+            <div class="control-group">
+                <h3 id="shape-label">Shape:</h3>
+                <select id="shape">
+                    <option value="circle">Circle</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <h3 id="size-label">Size:</h3>
+                <input type="number" id="size" value="50" min="10" max="200">
+            </div>
+            <div class="control-group">
+                <h3 id="color-label">Color:</h3>
+                <input type="color" id="color" value="#000000">
+            </div>
         </div>
-
-        <div class="control-group">
-            <h3 id="size-label">Size:</h3>
-            <input type="number" id="size" value="50" min="10" max="200">
-        </div>
-
-        <div class="control-group">
-            <h3 id="color-label">Color:</h3>
-            <input type="color" id="color" value="#000000">
-        </div>
-        <div>
-
+        <div id ="btn">
             <button id="undo">Undo</button>
             <button id="clear">Clear</button>
         </div>

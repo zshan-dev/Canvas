@@ -5,17 +5,17 @@
  */
 
 window.addEventListener("load", function () {
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
+  let canvas = document.getElementById("canvas");
+  let ctx = canvas.getContext("2d");
 
   canvas.width = 800;
   canvas.height = 500;
 
-  const shapeSelect = document.getElementById("shape");
-  const sizeInput = document.getElementById("size");
-  const colorInput = document.getElementById("color");
-  const undoButton = document.getElementById("undo");
-  const clearButton = document.getElementById("clear");
+  let shapeSelect = document.getElementById("shape");
+  let sizeInput = document.getElementById("size");
+  let colorInput = document.getElementById("color");
+  let undoButton = document.getElementById("undo");
+  let clearButton = document.getElementById("clear");
 
   // Array to store all shapes
   let shapes = [];
