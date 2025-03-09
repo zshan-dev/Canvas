@@ -1,45 +1,45 @@
 <!--
-    Index for canvas app
+    Main HTML page for canvas
     Author: Seif Otefa (400557672) and Zeeshan Bombaywala (400567923)
     Date: Feburary 27 2025
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canvas Assignment</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/shapes.js"></script>
     <script src="js/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>🎨 DoodleWorld 🖌️</h1>
     <div class="controls">
-        <div id ="options">
-            <div class="control-group">
-                <h3 id="shape-label">Shape:</h3>
-                <select id="shape">
-                    <option value="circle">Circle</option>
-                    <option value="rectangle">Rectangle</option>
-                    <option value="triangle">Triangle</option>
-                </select>
-            </div>
-            <div class="control-group">
-                <h3 id="size-label">Size:</h3>
-                <input type="number" id="size" value="50" min="10" max="200">
-            </div>
-            <div class="control-group">
-                <h3 id="color-label">Color:</h3>
-                <input type="color" id="color" value="#000000">
-            </div>
+      <div id="options">
+        <div class="control-group">
+          <h3 id="shape-label">Shape:</h3>
+          <select id="shape">
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="triangle">Triangle</option>
+          </select>
         </div>
-        <div id ="btn">
-            <button id="undo">Undo</button>
-            <button id="clear">Clear</button>
+        <div class="control-group">
+          <h3 id="size-label">Size:</h3>
+          <input type="number" id="size" value="50" min="10" max="200" />
         </div>
+        <div class="control-group">
+          <h3 id="color-label">Color:</h3>
+          <input type="color" id="color" value="#000000" />
+        </div>
+      </div>
+      <div id="btn">
+        <button id="undo">Undo</button>
+        <button id="clear">Clear</button>
+      </div>
     </div>
-    
+
     <canvas id="canvas"></canvas>
-</body>
+  </body>
 </html>

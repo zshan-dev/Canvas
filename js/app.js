@@ -1,5 +1,5 @@
 /**
- *  Logic for the Drawing on the Canvas
+ *  Logic for drawing on the canvas
  *  Authors: Seif Otefa (400557672) and Zeeshan Bombaywala (400567923)
  *  Date: Feburary 27 2025
  */
